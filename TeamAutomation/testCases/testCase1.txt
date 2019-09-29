@@ -1,6 +1,6 @@
-1. Test ID
-2. Requirement being tested
-3. Component being tested
-4. Method being tested
-5. Test input(s) including command line argument(s)
-6. Expected outputs
+1. 01
+2. The object itself, equals itself.
+3. ColorCombinaisonImpl
+4. equals(obj)
+5. this (**This seems so questionable)
+6. true

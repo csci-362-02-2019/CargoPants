@@ -1,0 +1,6 @@
+1. 004
+2. Null is not a valid object.
+3. ColorCombinaisonImpl
+4. equals(obj)
+5. null
+6. false
