@@ -1,4 +1,6 @@
-import Main.org.opens.colorfinder.result.*;
+package test;
+
+import org.opens.colorfinder.result.ColorCombinaisonImpl;
 import java.awt.Color;
 
 public class EqualsDriver{
