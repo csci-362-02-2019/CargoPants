@@ -1,6 +1,6 @@
 1. 03
-2. The object must be of type ColorCombinaisonImpl and valid colors.
-3. ColorCombinaisonImpl
-4. equals(obj)
-5. ColorCombinaisonImpl(Color(255,0,0), Color(0,0,255), 50)
-6. false
+2. The rgb value equating to white will output a hex value with all F's. 
+3. ColorConverter
+4. rgb2Hex(Color color)
+5. 255 255 255
+6. #FFFFFF
