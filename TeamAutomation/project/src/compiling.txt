@@ -1,1 +1,8 @@
-javac -d ../bin/ org/opens/colorfinder/result/ColorCombinaisonImpl.java
+# You can follow this format to compile and run test drivers.
+
+javac -d ../bin/ test.DriverName.class
+cd ../bin/
+java test.DriverName [arguments]
+
+# In case you need to recompile
+cd ../src/
