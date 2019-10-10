@@ -1,0 +1,7 @@
+1. 15
+2. Testing strings which would result in an error
+3. ContrastChecker
+4. computeContrast(double lighter, double darker)
+5. computeContrast
+6. "Donuts" "Pancakes" "Watermelon"
+7. IllegalArgumentException: double expected 
