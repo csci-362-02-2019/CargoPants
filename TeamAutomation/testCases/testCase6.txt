@@ -1,0 +1,7 @@
+1. 06
+2. The method will take a valid color defined by a hex value and convert to rgb.
+3. ColorConverter
+4. hex2Rgb(Color color)
+5. Hex2RgbDriver.java
+6. #DC880F
+7. rgb(220,136,15)

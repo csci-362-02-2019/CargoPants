@@ -1,0 +1,7 @@
+1. 13
+2. Testing to see of the method allows the use of integers which would make it fail
+3. ContrastChecker
+4. computeContrast(double lighter, double darker)
+5. computeContrast
+6. 100 250
+7. IllegalArgumentException: double expected

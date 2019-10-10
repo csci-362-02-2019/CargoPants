@@ -1,6 +1,7 @@
 1. 02
-2. The rgb value equating to black will output a hex value with all zeros. 
+2. The rgb value equating to black will output a hex value with all zeros.
 3. ColorConverter
 4. rgb2Hex(Color color)
-5. 0 0 0
-6. #000000
+5. Rgb2HexDriver.java
+6. 0 0 0
+7. #000000
