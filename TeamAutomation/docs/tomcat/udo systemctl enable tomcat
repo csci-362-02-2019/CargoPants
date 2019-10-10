@@ -1,0 +1,12 @@
+[0;1;32m●[0m tomcat.service - Tomcat 8.5 servlet container
+   Loaded: loaded (/etc/systemd/system/tomcat.service; disabled; vendor preset: enabled)
+   Active: [0;1;32mactive (running)[0m since Wed 2019-09-18 23:17:21 EDT; 17s ago
+  Process: 4623 ExecStart=/opt/tomcat/latest/bin/startup.sh (code=exited, status=0/SUCCESS)
+ Main PID: 4630 (java)
+    Tasks: 43 (limit: 4531)
+   CGroup: /system.slice/tomcat.service
+           └─4630 /usr/lib/jvm/default-java/bin/java -Djava.util.logging.config.file=/opt/tomcat/latest/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djava.security.egd=file:///dev/urandom -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Xms512M -Xmx1024M -server -XX:+UseParallelGC -Dignore.endorsed.dirs= -classpath /opt/tomcat/latest/bin/bootstrap.jar:/opt/tomcat/latest/bin/tomcat-juli.jar -Dcatalina.base=/opt/tomcat/latest -Dcatalina.home=/opt/tomcat/latest -Djava.io.tmpdir=/opt/tomcat/latest/temp org.apache.catalina.startup.Bootstrap start
+
+Sep 18 23:17:21 dylan-virtual-machine systemd[1]: Starting Tomcat 8.5 servlet container...
+Sep 18 23:17:21 dylan-virtual-machine startup.sh[4623]: Tomcat started.
+Sep 18 23:17:21 dylan-virtual-machine systemd[1]: Started Tomcat 8.5 servlet container.
