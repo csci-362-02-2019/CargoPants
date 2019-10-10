@@ -1,1 +1,3 @@
-javac -d ../bin/ org/opens/colorfinder/result/ColorCombinaisonImpl.java
+javac -d ../bin/ test/Rgb2HexDriver.java
+cd ../bin/
+java test.Rgb2HexDriver int int int
