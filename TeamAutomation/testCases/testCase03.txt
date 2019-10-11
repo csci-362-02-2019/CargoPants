@@ -1,0 +1,7 @@
+03
+The rgb value equating to white will output a hex value with all Fs. 
+
+org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
+Rgb2HexDriver
+255 255 255
+#FFFFFF

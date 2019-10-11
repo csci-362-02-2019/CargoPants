@@ -1,7 +1,0 @@
-1. 05
-2. The method will not accept strings as a valid input
-3. ColorConverter
-4. rgb2Hex(Color color)
-5. Rgb2HexDriver.java
-6. "cat" "meow" "dog"
-7. IllegalArgumentException: Color parameter outside expected range: Red Green Blue
