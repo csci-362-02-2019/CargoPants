@@ -1,6 +1,14 @@
-echo "Compiling all drivers..."
+# Helper script that compiles all drivers
+# Script assumes all drivers are in src/test/
 
-cd ../project/src/
+if [ ${PWD:len-10:10} != "CargoPants" ]; then
+    echo "Script must be run from root directory."
+    exit
+fi
+
+echo "Recompiling all drivers..."
+
+cd TeamAutomation/project/src/
 
 DRIVERS=./test/*
 
