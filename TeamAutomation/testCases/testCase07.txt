@@ -1,7 +1,7 @@
-1. 07
-2. The hex value equating to black will output a rgb values with all zeros.
-3. ColorConverter
-4. hex2Rgb(Color color)
-5. Hex2RgbDriver.java
-6. #000000
-7. rgb(0,0,0)
+07
+The hex value equating to black will output a rgb values with all zeros.
+
+org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
+Hex2RgbDriver
+#000000
+rgb(0,0,0)
