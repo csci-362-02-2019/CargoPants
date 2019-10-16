@@ -1,0 +1,7 @@
+1. 04
+2. The method will not allow rgb values out of range.
+3. ColorConverter
+4. rgb2Hex(Color color)
+5. Rgb2HexDriver.java
+6. 300 -15 2
+7. IllegalArgumentException: Color parameter outside of expected range: Red Green Blue

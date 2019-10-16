@@ -1,0 +1,7 @@
+1. 11
+2. The method will take the valid inputs ans produce a proper output
+3. ContrastChecker
+4. computeContrast(double lighter, double darker)
+5. computeContrast
+6. 50.0 20.0
+7. 2.50
