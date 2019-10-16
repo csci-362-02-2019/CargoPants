@@ -1,0 +1,7 @@
+1. 03
+2. The rgb value equating to white will output a hex value with all F's.
+3. ColorConverter
+4. rgb2Hex(Color color)
+5. Rgb2HexDriver.java
+6. 255 255 255
+7. #FFFFFF
