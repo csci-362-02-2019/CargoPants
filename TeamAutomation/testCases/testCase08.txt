@@ -1,7 +1,7 @@
-1. 08
-2. The hex value equating to white will output a rgb values with all zeros.
-3. ColorConverter
-4. hex2Rgb(Color color)
-5. Hex2RgbDriver.java
-6. FFFFFF
-7. rgb(255,255,255)
+08
+The hex value equating to white will output a rgb values with all zeros.
+
+org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
+Hex2RgbDriver
+FFFFFF
+rgb(255,255,255)
