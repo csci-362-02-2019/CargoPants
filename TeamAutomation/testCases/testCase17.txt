@@ -1,0 +1,7 @@
+17
+Testing negative values which should result in no errors
+
+org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
+offsetRgbColorDriver
+100 150 255 -50 -100 -200
+50 50 55
