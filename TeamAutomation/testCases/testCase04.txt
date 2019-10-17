@@ -1,0 +1,7 @@
+04
+The method will not allow rgb values out of range.
+
+org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
+Rgb2HexDriver
+300 -15 2
+Exception

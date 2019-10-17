@@ -1,6 +1,0 @@
-1. 05
-2.
-3. ColorConverter
-4. rgb2Hex(Color color)
-5. "cat" "meow" "dog"
-6. IllegalArgumentException: Color parameter outside expected range: Red Green Blue

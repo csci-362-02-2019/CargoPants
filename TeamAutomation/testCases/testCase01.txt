@@ -1,0 +1,7 @@
+01
+The method will take a valid color defined by rgb and change it to hex
+
+org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
+Rgb2HexDriver
+220 136 15
+#DC880F
