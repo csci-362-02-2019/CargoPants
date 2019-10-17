@@ -3,5 +3,5 @@ The method will take a valid color defined by a hex value and convert to rgb.
 
 org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
 Hex2RgbDriver
-#DC880F
-rgb(220,136,15)
+0xDC880F
+rgb(220, 136, 15)

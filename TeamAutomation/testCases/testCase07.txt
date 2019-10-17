@@ -3,5 +3,5 @@ The hex value equating to black will output a rgb values with all zeros.
 
 org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
 Hex2RgbDriver
-#000000
-rgb(0,0,0)
+0x000000
+rgb(0, 0, 0)
