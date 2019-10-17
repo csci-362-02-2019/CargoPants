@@ -4,4 +4,4 @@ Testing a color and three normal integers to make sure the function works
 org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
 offsetRgbColorDriver
 250 0 0 5 10 15
-255 10 15 
+java.awt.Color[r=255,g=10,b=15]
