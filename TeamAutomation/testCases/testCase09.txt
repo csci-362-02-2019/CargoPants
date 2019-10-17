@@ -1,7 +1,7 @@
-1. 09
-2.
-3. ColorConverter
-4. hex2Rgb(Color color)
-5. Hex2RgbDriver.java
-6.
-7. 
+09
+Testing a valid hex value
+
+org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
+Hex2RgbDriver
+0x123456
+rgb(18, 52, 86)

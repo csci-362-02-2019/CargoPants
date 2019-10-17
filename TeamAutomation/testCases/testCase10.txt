@@ -1,7 +1,7 @@
-1. 10
-2. The method will not accept strings as a valid input.
-3. ColorConverter
-4. hex2Rgb(Color color)
-5. Hex2RgbDriver.java
-6. "cats"
-7. IllegalArgumentException:
+10
+The method will not accept strings as a valid input.
+
+org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
+Hex2RgbDriver
+"cats"
+IllegalArgumentException:
