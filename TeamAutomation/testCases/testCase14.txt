@@ -1,7 +1,7 @@
-1. 14
-2. Testing when the two values are equal
-3. ContrastChecker
-4. computeContrast(double lighter, double darker)
-5. computeContrast
-6. 100.0 100.0
-7. 1
+14
+Testing when the two values are equal
+
+org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
+ComputeContrastDriver
+100.0 100.0
+1
