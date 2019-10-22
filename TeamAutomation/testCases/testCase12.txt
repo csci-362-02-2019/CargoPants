@@ -1,7 +1,7 @@
-1. 12
-2. Testing to see of the method allows the use of negative doubles
-3. ContrastChecker
-4. computeContrast(double lighter, double darker)
-5. computeContrast
-6. -50.0 0.0
-7. -999
+12
+Testing to see of the method allows the use of negative doubles
+
+org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
+ComputeContrastDriver
+-50.0 0.0
+-999
