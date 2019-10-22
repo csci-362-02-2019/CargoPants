@@ -111,7 +111,7 @@ public final class ContrastChecker {
      * @param darker
      * @return
      */
-    private static double computeContrast(double lighter, double darker) {
+    public static double computeContrast(double lighter, double darker) {
         return (Double.valueOf(((lighter + CONTRAST_FACTOR) / (darker + CONTRAST_FACTOR))));
     }
 
