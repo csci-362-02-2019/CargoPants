@@ -1,0 +1,7 @@
+23
+This method finds the distance between two colors using the 3 - dimensions Euclidean distance.
+
+org.opens.utils.distancecalculator.DistanceCalculator.calculate()
+CalculateDriver
+0x000000 0xFFFFFF
+441.67
