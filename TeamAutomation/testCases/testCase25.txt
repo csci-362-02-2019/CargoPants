@@ -4,4 +4,4 @@ This method finds the distance between two colors using the 3 - dimensions Eucli
 org.opens.utils.distancecalculator.DistanceCalculator.calculate()
 CalculateDriver
 20 80 140 10 80 170
-31.6227766
+31.62
