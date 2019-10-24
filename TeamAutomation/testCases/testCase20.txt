@@ -1,0 +1,7 @@
+20
+Testing all the same value which should result in no error if the value tested is less than 128
+
+org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
+offsetRgbColorDriver
+50 50 50 50 50 50
+100 100 100
