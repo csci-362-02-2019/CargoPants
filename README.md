@@ -22,7 +22,7 @@ To run the tests provided in this repository, navigate to its root directory in 
 then run the following script:
 
 ```
-$ bash ./TeamAutomation/scripts/runAllTests.sh
+$ bash ./scripts/runAllTests.sh
 ```
 
 The script will compile the source code and all drivers for the tests, then individually

@@ -1,0 +1,7 @@
+18
+Testing values which result in a red value greater than 255
+
+org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
+offsetRgbColorDriver
+255 0 0 45 0 0
+IllegalArgumentException: Color parameter outside of expected range: red
