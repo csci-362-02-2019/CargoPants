@@ -4,4 +4,4 @@ Testing when the two values are equal
 org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
 ComputeContrastDriver
 100.0 100.0
-1
+1.0
