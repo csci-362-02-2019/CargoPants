@@ -18,7 +18,7 @@ various methods from within.
 
 This respository was built to run on Ubuntu 16.04. Java JDK 1.7 is required.
 
-To run the tests provided in this repository, navigate to its root directory in Bash,
+To run the tests provided in this repository, navigate to `path/to/CargoPants/TestAutomation/`,
 then run the following script:
 
 ```
@@ -26,8 +26,8 @@ $ bash ./scripts/runAllTests.sh
 ```
 
 The script will compile the source code and all drivers for the tests, then individually
-run all test cases provided in `./TeamAutomation/testCases/`
+run all test cases provided in `./testCases/`
 
-*(Note that the script will only execute from the root directory.)*
+*(Note that the script will only execute from the specified directory.)*
 
 
