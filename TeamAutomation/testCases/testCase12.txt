@@ -4,4 +4,4 @@ Testing to see of the method allows the use of negative doubles
 org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
 ComputeContrastDriver
 -50.0 0.0
--999
+-999.0
