@@ -3,5 +3,5 @@ This method will not accept strings as valid arguments.
 
 org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
 Rgb2HexDriver
-"cat" "meow" "dog"
+cat meow dog
 Exception
