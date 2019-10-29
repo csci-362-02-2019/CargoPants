@@ -5,25 +5,25 @@
 #    passes each case individually to
 #    runSingleTest helper script
 
-# Script will only run from root directory.
-# This helps keep things from breaking
-#  in unexpected ways.
-if [ ${PWD:len-10:10} != "CargoPants" ]; then
+# Script will only run from the TestAutomation
+#  directory. This helps keep things from
+#  breaking in unexpected ways.
+if [ ${PWD:len-14:14} != "TestAutomation" ]; then
     echo "Script must be run from root directory."
     exit
 fi
 
 # Compile drivers
-bash ./TeamAutomation/scripts/compileDrivers.sh
+bash ./scripts/compileDrivers.sh
 echo
 
 # Instantiate and run test cases
 echo "Running test cases..."
-TESTCASES=./TeamAutomation/testCases/*
+TESTCASES=./testCases/*
 for input in $TESTCASES
 do
-    if [ $input != "./TeamAutomation/testCases/testTemplate.txt" ]; then
-        bash ./TeamAutomation/scripts/runSingleTest.sh $input
+    if [ $input != "./testCases/testTemplate.txt" ]; then
+        bash ./scripts/runSingleTest.sh $input
     fi
 done
 
