@@ -19,11 +19,10 @@ echo
 
 # Instantiate and run test cases
 echo "Running test cases..."
-TESTCASES=./testCases/*
-for input in $TESTCASES
+ls ./testCases | while read -r file
 do
-    if [ $input != "./testCases/testTemplate.txt" ]; then
-        bash ./scripts/runSingleTest.sh $input
+    if [ $file != "testTemplate.txt" ]; then
+        bash ./scripts/runSingleTest.sh $file
     fi
 done
 

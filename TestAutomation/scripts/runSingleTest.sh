@@ -20,8 +20,10 @@ if [ $# -eq 0 ]; then
     exit
 fi
 
+#echo $1 #debug
+
 # first argument is the input file
-input=$1
+input="./testCases/$1"
 
 # declare variables based on template
 case=$(sed '1!d' "$input")
