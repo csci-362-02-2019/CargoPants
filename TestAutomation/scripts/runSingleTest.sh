@@ -1,20 +1,16 @@
 # Helper method that runs a single test case,
 #  provided the test file as an argument.
 #
-# Two things to note about the script...
-#  1. If Java produces an exception, the
-#     exception will be printed to the
-#     terminal it was run from, regardless
-#     of if this output is being piped.
-#  2. Should an exception happen, there will
-#     be no $output variable, so bash will
-#     also report that as an error in the
-#     shell, even when piping.
+# If Java produces an exception, the exception
+#  will be printed to the terminal it was run
+#  from, regardless of if this output is being
+#  piped. Exceptions need to be caught to
+#  prevent this issue.
 
 
 # check if directory is valid
-if [ ${PWD:len-10:10} != "CargoPants" ]; then
-    echo "Script must be run from root directory."
+if [ ${PWD:len-14:14} != "TestAutomation" ]; then
+    echo "Script must be run from TestAutomation."
     exit
 fi
 
@@ -35,7 +31,7 @@ args=$(sed '6!d' "$input")
 oracle=$(sed '7!d' "$input")
 
 # walk to bin/
-cd ./TeamAutomation/project/bin/
+cd ./project/bin/
     
 # run driver and store result as variable
 output=$(java "test.$driver" $args)
