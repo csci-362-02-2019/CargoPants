@@ -41,7 +41,7 @@ if [[ $(sed "46!d" $template) =~ ^(.*)\{time\}(.*)$ ]]; then
 fi
 
 # Append next section of template
-for i in {47..55}; do
+for i in {47..56}; do
     sed "$i!d" $template >> $outFile
 done
 
@@ -55,53 +55,57 @@ do
         #echo $temp
 
         # Capture variables from runSingleTest
-        if [[ $temp =~ (.*)$del(.*)$del(.*)$del(.*)$del(.*)$del(.*) ]]; then
+        if [[ $temp =~ (.*)$del(.*)$del(.*)$del(.*)$del(.*)$del(.*)$del(.*) ]]; then
             #echo ${BASH_REMATCH[0]}
 
-            tcase=${BASH_REMATCH[1]} 
-            method=${BASH_REMATCH[2]}
-            inputs=${BASH_REMATCH[3]}
-            output=${BASH_REMATCH[4]}
-            oracle=${BASH_REMATCH[5]}
-            result=${BASH_REMATCH[6]}
+            tcase=${BASH_REMATCH[1]}
+            reqmnt=${BASH_REMATCH[2]}
+            method=${BASH_REMATCH[3]}
+            inputs=${BASH_REMATCH[4]}
+            output=${BASH_REMATCH[5]}
+            oracle=${BASH_REMATCH[6]}
+            result=${BASH_REMATCH[7]}
         fi
 
         # Get Class.method from full path
-        if [[ "$method" =~ \.([a-zA-Z0-9]+\.[a-zA-Z0-9]+\(\))$ ]]; then
+        if [[ "$method" =~ \.([a-zA-Z0-9]+)(\.[a-zA-Z0-9]+\(\))$ ]]; then
             #echo ${BASH_REMATCH[0]}
-            method=${BASH_REMATCH[1]}
+            method="${BASH_REMATCH[1]} ${BASH_REMATCH[2]}"
         fi
 
         # append row start
-        sed "56!d" $template >> $outFile
+        sed "57!d" $template >> $outFile
 
         # Append test cases to output
-        if [[ $(sed "57!d" $template) =~ ^(.*)\{case\}(.*)$ ]]; then
+        if [[ $(sed "58!d" $template) =~ ^(.*)\{case\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$tcase${BASH_REMATCH[2]}" >> "$outFile"
         fi
-        if [[ $(sed "58!d" $template) =~ ^(.*)\{method\}(.*)$ ]]; then
+        if [[ $(sed "59!d" $template) =~ ^(.*)\{requirement\}(.*)$ ]]; then
+            echo "${BASH_REMATCH[1]}$reqmnt${BASH_REMATCH[2]}" >> "$outFile"
+        fi
+        if [[ $(sed "60!d" $template) =~ ^(.*)\{method\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$method${BASH_REMATCH[2]}" >> "$outFile"
         fi
-        if [[ $(sed "59!d" $template) =~ ^(.*)\{inputs\}(.*)$ ]]; then
+        if [[ $(sed "61!d" $template) =~ ^(.*)\{inputs\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$inputs${BASH_REMATCH[2]}" >> "$outFile"
         fi
-        if [[ $(sed "60!d" $template) =~ ^(.*)\{output\}(.*)$ ]]; then
+        if [[ $(sed "62!d" $template) =~ ^(.*)\{output\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$output${BASH_REMATCH[2]}" >> "$outFile"
         fi
-        if [[ $(sed "61!d" $template) =~ ^(.*)\{oracle\}(.*)$ ]]; then
+        if [[ $(sed "63!d" $template) =~ ^(.*)\{oracle\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$oracle${BASH_REMATCH[2]}" >> "$outFile"
         fi
-        if [[ $(sed "62!d" $template) =~ ^(.*)\{pf\}(.*)\{result\}(.*)$ ]]; then
+        if [[ $(sed "64!d" $template) =~ ^(.*)\{pf\}(.*)\{result\}(.*)$ ]]; then
             echo "${BASH_REMATCH[1]}$result${BASH_REMATCH[2]}$result${BASH_REMATCH[3]}" >> "$outFile"
         fi
 
         # append row end
-        sed "63!d" $template >> $outFile
+        sed "65!d" $template >> $outFile
     fi
 done
 
 # Append end of template
-for i in {64..66}; do
+for i in {66..68}; do
     sed "$i!d" $template >> $outFile
 done
 

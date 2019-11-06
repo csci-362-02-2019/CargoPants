@@ -27,6 +27,7 @@ input="./testCases/$1"
 
 # declare variables based on template
 case=$(sed '1!d' "$input")
+reqmnt=$(sed '2!d' "$input")
 method=$(sed '4!d' "$input")
 driver=$(sed '5!d' "$input")
 args=$(sed '6!d' "$input")
@@ -39,7 +40,7 @@ cd ./project/bin/
 output=$(java "test.$driver" $args)
 result=$(diff -q <(echo "$output") <(echo "$oracle"))
 
-printf "$case===$method===$args===$output===$oracle==="
+printf "$case===$reqmnt===$method===$args===$output===$oracle==="
 # Previous output method
 #printf "Test case: $case\n"
 #printf "Method: $method\n"
