@@ -1,0 +1,258 @@
+<html>
+<head>
+<title>Test Results</title>
+<style>
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.subtitle {
+    font-size: 1.3em;
+    width: 100%;
+    padding: 10px 50px 40px 50px;
+}
+#date {
+    text-align: right;  
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px -20px;
+}
+.results {
+    width: 100%;
+}
+.results, .results th, .results th td {
+    border: 1px solid black;
+}
+.pass {
+    background-color: green;
+}
+.fail {
+    background-color: red;
+}
+</style>
+</head>
+<body>
+  <div class=title>Team CargoPants</div>
+  <table class=subtitle>
+    <tr>
+      <th>Isabel Lally</th>
+      <th>Collin Bauer</th>
+      <th>Dylan Evans</th>
+    </tr>
+  </table>
+  <div id="date">Wed Nov  6 03:08:09 EST 2019</div>
+  <table class=results>
+    <tr>
+      <th>Case</th>
+      <th>Method</th>
+      <th>Inputs</th>
+      <th>Output</th>
+      <th>Oracle</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <th>01</th>
+      <th>ColorConverter.rgb2Hex()</th>
+      <th>220 136 15</th>
+      <th>#DC880F</th>
+      <th>#DC880F</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>02</th>
+      <th>ColorConverter.rgb2Hex()</th>
+      <th>0 0 0</th>
+      <th>#000000</th>
+      <th>#000000</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>03</th>
+      <th>ColorConverter.rgb2Hex()</th>
+      <th>255 255 255</th>
+      <th>#FFFFFF</th>
+      <th>#FFFFFF</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>04</th>
+      <th>ColorConverter.rgb2Hex()</th>
+      <th>30 15 2</th>
+      <th>#1E0F02</th>
+      <th>#1E0F02</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>05</th>
+      <th>ColorConverter.rgb2Hex()</th>
+      <th>184 93 25</th>
+      <th>#B85D19</th>
+      <th>#B85D19</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>06</th>
+      <th>ColorConverter.hex2Rgb()</th>
+      <th>0xDC880F</th>
+      <th>rgb(220, 136, 15)</th>
+      <th>rgb(220, 136, 15)</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>07</th>
+      <th>ColorConverter.hex2Rgb()</th>
+      <th>0x000000</th>
+      <th>rgb(0, 0, 0)</th>
+      <th>rgb(0, 0, 0)</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>08</th>
+      <th>ColorConverter.hex2Rgb()</th>
+      <th>0xFFFFFF</th>
+      <th>rgb(255, 255, 255)</th>
+      <th>rgb(255, 255, 255)</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>09</th>
+      <th>ColorConverter.hex2Rgb()</th>
+      <th>18 52 86</th>
+      <th>rgb(18, 52, 86)</th>
+      <th>rgb(18, 52, 86)</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>10</th>
+      <th>ColorConverter.hex2Rgb()</th>
+      <th>0xAABBCC</th>
+      <th>rgb(170, 187, 204)</th>
+      <th>rgb(170, 187, 204)</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>11</th>
+      <th>ContrastChecker.computeContrast()</th>
+      <th>50.0 20.0</th>
+      <th>2.5</th>
+      <th>2.5</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>12</th>
+      <th>ContrastChecker.computeContrast()</th>
+      <th>-50.0 0.0</th>
+      <th>-999.0</th>
+      <th>-999.0</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>13</th>
+      <th>ContrastChecker.computeContrast()</th>
+      <th>100 250</th>
+      <th>0.4</th>
+      <th>0.4</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>14</th>
+      <th>ContrastChecker.computeContrast()</th>
+      <th>100.0 100.0</th>
+      <th>1.0</th>
+      <th>1.0</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>15</th>
+      <th>ContrastChecker.computeContrast()</th>
+      <th>1000000.9 75.5</th>
+      <th>13236.28</th>
+      <th>13236.28</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>16</th>
+      <th>ColorConverter.offsetRgbColor()</th>
+      <th>250 0 0 5 10 15</th>
+      <th>java.awt.Color[r=255,g=10,b=15]</th>
+      <th>java.awt.Color[r=255,g=10,b=15]</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>17</th>
+      <th>ColorConverter.offsetRgbColor()</th>
+      <th>100 150 255 -50 -100 -200</th>
+      <th>java.awt.Color[r=50,g=50,b=55]</th>
+      <th>java.awt.Color[r=50,g=50,b=55]</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>18</th>
+      <th>ColorConverter.offsetRgbColor()</th>
+      <th>2 5 16 45 101 99</th>
+      <th>java.awt.Color[r=47,g=106,b=115]</th>
+      <th>java.awt.Color[r=47,g=106,b=115]</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>19</th>
+      <th>ColorConverter.offsetRgbColor()</th>
+      <th>101 101 202 25 50 -101</th>
+      <th>java.awt.Color[r=126,g=151,b=101]</th>
+      <th>java.awt.Color[r=126,g=151,b=101]</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>20</th>
+      <th>ColorConverter.offsetRgbColor()</th>
+      <th>50 50 50 50 50 50</th>
+      <th>java.awt.Color[r=100,g=100,b=100]</th>
+      <th>java.awt.Color[r=100,g=100,b=100]</th>
+      <th class=pass>pass</th>
+    </tr>
+    <tr>
+      <th>21</th>
+      <th>DistanceCalculator.calculate()</th>
+      <th>255 255 255 0 0 0</th>
+      <th>367.77</th>
+      <th>441.67</th>
+      <th class=fail>fail</th>
+    </tr>
+    <tr>
+      <th>22</th>
+      <th>DistanceCalculator.calculate()</th>
+      <th>200 100 10 200 100 10</th>
+      <th>0.0</th>
+      <th>0.00</th>
+      <th class=fail>fail</th>
+    </tr>
+    <tr>
+      <th>23</th>
+      <th>DistanceCalculator.calculate()</th>
+      <th>0x000000 0xFFFFFF</th>
+      <th>367.77</th>
+      <th>441.67</th>
+      <th class=fail>fail</th>
+    </tr>
+    <tr>
+      <th>24</th>
+      <th>DistanceCalculator.calculate()</th>
+      <th>0xAABBCC 0xAABBCC</th>
+      <th>0.0</th>
+      <th>0.00</th>
+      <th class=fail>fail</th>
+    </tr>
+    <tr>
+      <th>25</th>
+      <th>DistanceCalculator.calculate()</th>
+      <th>20 80 140 10 80 170</th>
+      <th>29.62</th>
+      <th>31.62</th>
+      <th class=fail>fail</th>
+    </tr>
+</table>
+</body>
+</html>
