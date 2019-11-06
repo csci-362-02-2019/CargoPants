@@ -38,12 +38,12 @@ do
         if [[ $temp =~ (.*)$del(.*)$del(.*)$del(.*)$del(.*)$del(.*) ]]; then
             #echo $BASH_REMATCH
             #echo ${BASH_REMATCH[0]}
-            echo ${BASH_REMATCH[1]} >> "$outfile"
-            echo ${BASH_REMATCH[2]} >> "$outfile"
-            echo ${BASH_REMATCH[3]} >> "$outfile"
-            echo ${BASH_REMATCH[4]} >> "$outfile"
-            echo ${BASH_REMATCH[5]} >> "$outfile"
-            echo ${BASH_REMATCH[6]} >> "$outfile"
+            echo ${BASH_REMATCH[1]} >> "$outFile"
+            echo ${BASH_REMATCH[2]} >> "$outFile"
+            echo ${BASH_REMATCH[3]} >> "$outFile"
+            echo ${BASH_REMATCH[4]} >> "$outFile"
+            echo ${BASH_REMATCH[5]} >> "$outFile"
+            echo ${BASH_REMATCH[6]} >> "$outFile"
 
         fi
         #echo $temp
