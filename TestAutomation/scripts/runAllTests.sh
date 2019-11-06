@@ -17,12 +17,36 @@ fi
 bash ./scripts/compileDrivers.sh
 echo
 
+# Make the temp output
+mkdir temp
+touch ./temp/testResults.html
+
+# Delimeter (used to split test output into variable)
+del="==="
+
+# output file
+rm ./temp/output.txt
+touch ./temp/output.txt
+outFile=./temp/output.txt
+
 # Instantiate and run test cases
 echo "Running test cases..."
 ls ./testCases | while read -r file
 do
     if [ $file != "testTemplate.txt" ]; then
-        bash ./scripts/runSingleTest.sh $file
+        temp=$(bash ./scripts/runSingleTest.sh $file)
+        if [[ $temp =~ (.*)$del(.*)$del(.*)$del(.*)$del(.*)$del(.*) ]]; then
+            #echo $BASH_REMATCH
+            #echo ${BASH_REMATCH[0]}
+            echo ${BASH_REMATCH[1]} >> "$outfile"
+            echo ${BASH_REMATCH[2]} >> "$outfile"
+            echo ${BASH_REMATCH[3]} >> "$outfile"
+            echo ${BASH_REMATCH[4]} >> "$outfile"
+            echo ${BASH_REMATCH[5]} >> "$outfile"
+            echo ${BASH_REMATCH[6]} >> "$outfile"
+
+        fi
+        #echo $temp
     fi
 done
 
