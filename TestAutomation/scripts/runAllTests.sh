@@ -50,6 +50,7 @@ echo "Running test cases..."
 ls ./testCases | while read -r file
 do
     if [ $file != "testTemplate.txt" ]; then
+        echo $file
         temp=$(bash ./scripts/runSingleTest.sh $file)
         #echo $temp
 
@@ -67,7 +68,7 @@ do
 
         # Get Class.method from full path
         if [[ "$method" =~ \.([a-zA-Z0-9]+\.[a-zA-Z0-9]+\(\))$ ]]; then
-            echo ${BASH_REMATCH[0]}
+            #echo ${BASH_REMATCH[0]}
             method=${BASH_REMATCH[1]}
         fi
 
