@@ -3,5 +3,5 @@ This method takes in a hex value to make a color and outputs rgb values of that 
 
 org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
 Hex2RgbDriver
-0x123456
+18 52 86
 rgb(18, 52, 86)
