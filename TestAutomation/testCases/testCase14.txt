@@ -1,5 +1,5 @@
 14
-Testing when the two values are equal
+This method takes two doubles and computes the contrast between them and outputs in the form of a double.
 
 org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
 ComputeContrastDriver

@@ -1,6 +1,6 @@
 20
-Testing all the same value which should result in no error if the value tested is less than 128
-
+This method takes six integers, the first three represent the rgb values of a color
+and the next three are the values added/subratacted from the color values. The output is in the form of a single color.
 org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
 offsetRgbColorDriver
 50 50 50 50 50 50

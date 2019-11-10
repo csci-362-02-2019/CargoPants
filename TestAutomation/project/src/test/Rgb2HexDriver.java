@@ -10,10 +10,13 @@ public class Rgb2HexDriver{
         int g = Integer.parseInt(args[1]);
         int b = Integer.parseInt(args[2]);
 
-        String hexVal = ColorConverter.rgb2Hex(new Color(r, g, b));
-
-        System.out.println(hexVal);
-
+        try{
+          String hexVal = ColorConverter.rgb2Hex(new Color(r, g, b));
+          System.out.println(hexVal);
+        }
+        catch(Exception e){
+          System.out.println(e.getMessage());
+        }
         /*
         if (args.length <= 0){
             System.out.println("Arguments expected. Exiting.");
