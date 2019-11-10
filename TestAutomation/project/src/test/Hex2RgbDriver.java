@@ -14,14 +14,18 @@ public class Hex2RgbDriver{
 
 	if (args.length == 3){
 		int r = Integer.parseInt(args[0]);
-		int b = Integer.parseInt(args[1]);
-		int g = Integer.parseInt(args[0]);
+		int g = Integer.parseInt(args[1]);
+		int b = Integer.parseInt(args[2]);
 		color = new Color(r, g, b);
 	}
 
-        String rgb = ColorConverter.hex2Rgb(color);
-
-        System.out.println(rgb);
+	try{
+         	String rgb = ColorConverter.hex2Rgb(color);
+        	System.out.println(rgb);
+	}
+	catch(Exception e){
+	 System.out.println(e.getMessage());
+	}
 
     }
 }
