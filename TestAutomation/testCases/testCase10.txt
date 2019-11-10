@@ -1,7 +1,7 @@
 10
-The method will not accept strings as a valid input.
+This method takes an input of a hex value to create a color and outputs the rgb values of that color.
 
-org.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
+orgs.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
 Hex2RgbDriver
 "cats"
-IllegalArgumentException:
+InvalidArgumentException
