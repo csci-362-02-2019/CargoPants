@@ -1,7 +1,7 @@
 13
-Testing to see of the method allows the use of integers which would make it fail
+This method takes two doubles and computes the contrast between them and outputs in the form of a double.
 
 org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
 ComputeContrastDriver
 100 250
-IllegalArgumentException: double expected
+0.4

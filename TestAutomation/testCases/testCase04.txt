@@ -1,7 +1,7 @@
 04
-The method will not allow rgb values out of range.
+The method will take a valid color defined by rgb and change it to hex
 
 org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
 Rgb2HexDriver
-300 -15 2
-Exception
+30 15 2
+#1E0F02

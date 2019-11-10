@@ -1,5 +1,5 @@
 11
-The method will take the valid inputs ans produce a proper output
+This method takes two doubles and computes the contrast between them and outputs in the form of a double.
 
 org.opens.utils.contrastchecker.ContrastChecker.computeContrast()
 ComputeContrastDriver
