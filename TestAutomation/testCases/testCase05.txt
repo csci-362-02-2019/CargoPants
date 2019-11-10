@@ -1,7 +1,7 @@
 05
-This method will not accept strings as valid arguments.
+The method will take a valid color defined by rgb and change it to hex
 
 org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
 Rgb2HexDriver
-cat meow dog
-Exception
+184 93 25
+#B85D19

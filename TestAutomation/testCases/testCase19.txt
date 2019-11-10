@@ -1,7 +1,7 @@
 19
-Testing invalid arguments which should result in an error
-
+This method takes six integers, the first three represent the rgb values of a color
+and the next three are the values added/subratacted from the color values. The output is in the form of a single color.
 org.opens.utils.colorconvertor.ColorConverter.offsetRgbColor()
 offsetRgbColorDriver
-"coffee" "juice" "pasta" "urchin" "llama" "misty"
-IllegalArgumentException: expected color, int, int, int
+101 101 202 25 50 -101
+java.awt.Color[r=126,g=151,b=101]
