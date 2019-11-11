@@ -48,7 +48,7 @@ printf "$case===$method===$args===$output===$oracle==="
 #printf "Oracle: $oracle\n"
 
 # Print whether it passes or fails
-if [$result != ""]; then
+if ["$result" != ""]; then
     printf "Result? \e[1m\e[32mPass\e[39m\e[0m\n"
 else
     printf "Result? \e[1m\e[31mFail\e[39m\e[0m\n"
