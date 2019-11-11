@@ -1,5 +1,5 @@
 Test ID ##                                          <-- read by script
-Requirement being tested
+Requirement being tested				<-- read by script
 # Reserved for comments
 package.path.to.Component.method()
 DriverName                                          <-- read by script

@@ -1,5 +1,5 @@
 05
-The method will take a valid color defined by rgb and change it to hex
+The method will take a valid color defined by rgb and change it to hex.
 
 org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
 Rgb2HexDriver

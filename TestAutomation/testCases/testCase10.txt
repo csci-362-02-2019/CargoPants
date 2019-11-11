@@ -1,5 +1,5 @@
 10
-This method takes an input of a hex value to create a color and outputs the rgb values of that color.
+The method will take a valid color defined by a hex value and convert to rgb.
 
 orgs.opens.utils.colorconvertor.ColorConverter.hex2Rgb()
 Hex2RgbDriver
