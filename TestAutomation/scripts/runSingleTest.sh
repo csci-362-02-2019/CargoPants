@@ -20,8 +20,10 @@ if [ $# -eq 0 ]; then
     exit
 fi
 
+#echo $1 #debug
+
 # first argument is the input file
-input=$1
+input="./testCases/$1"
 
 # declare variables based on template
 case=$(sed '1!d' "$input")
@@ -32,18 +34,18 @@ oracle=$(sed '7!d' "$input")
 
 # walk to bin/
 cd ./project/bin/
-    
+
 # run driver and store result as variable
 output=$(java "test.$driver" $args)
 result=$(diff -q <(echo "$output") <(echo "$oracle"))
 
-# Print outcome from driver
-printf "Test case: $case\n"
-printf "Method: $method\n"
-#printf "java \"test.$driver\" $args\n" #debug
-printf "Inputs: $args\n"
-printf "Output: $output\n"
-printf "Oracle: $oracle\n"
+printf "$case===$method===$args===$output===$oracle==="
+# Previous output method
+#printf "Test case: $case\n"
+#printf "Method: $method\n"
+#printf "Inputs: $args\n"
+#printf "Output: $output\n"
+#printf "Oracle: $oracle\n"
 
 # Print whether it passes or fails
 if ["$result" != ""]; then
