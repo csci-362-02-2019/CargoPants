@@ -41,6 +41,7 @@ output=$(java "test.$driver" $args)
 result=$(diff -q <(echo "$output") <(echo "$oracle"))
 
 printf "$case===$reqmnt===$method===$args===$output===$oracle==="
+
 # Previous output method
 #printf "Test case: $case\n"
 #printf "Method: $method\n"

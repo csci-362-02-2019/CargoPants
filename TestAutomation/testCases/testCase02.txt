@@ -1,5 +1,5 @@
 02
-The rgb value equating to black will output a hex value with all zeros. 
+The method will take a valid color defined by rgb and change it to hex.
 
 org.opens.utils.colorconvertor.ColorConverter.rgb2Hex()
 Rgb2HexDriver
