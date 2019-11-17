@@ -27,6 +27,7 @@ input="./testCases/$1"
 
 # declare variables based on template
 case=$(sed '1!d' "$input")
+reqmnt=$(sed '2!d' "$input")
 method=$(sed '4!d' "$input")
 driver=$(sed '5!d' "$input")
 args=$(sed '6!d' "$input")
@@ -39,7 +40,8 @@ cd ./project/bin/
 output=$(java "test.$driver" $args)
 result=$(diff -q <(echo "$output") <(echo "$oracle"))
 
-printf "$case===$method===$args===$output===$oracle==="
+printf "$case===$reqmnt===$method===$args===$output===$oracle==="
+
 # Previous output method
 #printf "Test case: $case\n"
 #printf "Method: $method\n"
@@ -48,10 +50,10 @@ printf "$case===$method===$args===$output===$oracle==="
 #printf "Oracle: $oracle\n"
 
 # Print whether it passes or fails
-if ["$result" != ""]; then
-    printf "Result? \e[1m\e[32mPass\e[39m\e[0m\n"
+if [ "$result" != "" ]; then
+    printf "fail"
 else
-    printf "Result? \e[1m\e[31mFail\e[39m\e[0m\n"
+    printf "pass"
 fi
 
 echo
