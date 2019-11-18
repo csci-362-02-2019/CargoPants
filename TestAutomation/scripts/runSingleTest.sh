@@ -20,11 +20,14 @@ if [ $# -eq 0 ]; then
     exit
 fi
 
+#echo $1 #debug
+
 # first argument is the input file
-input=$1
+input="./testCases/$1"
 
 # declare variables based on template
 case=$(sed '1!d' "$input")
+reqmnt=$(sed '2!d' "$input")
 method=$(sed '4!d' "$input")
 driver=$(sed '5!d' "$input")
 args=$(sed '6!d' "$input")
@@ -32,24 +35,25 @@ oracle=$(sed '7!d' "$input")
 
 # walk to bin/
 cd ./project/bin/
-    
+
 # run driver and store result as variable
 output=$(java "test.$driver" $args)
 result=$(diff -q <(echo "$output") <(echo "$oracle"))
 
-# Print outcome from driver
-printf "Test case: $case\n"
-printf "Method: $method\n"
-#printf "java \"test.$driver\" $args\n" #debug
-printf "Inputs: $args\n"
-printf "Output: $output\n"
-printf "Oracle: $oracle\n"
+printf "$case===$reqmnt===$method===$args===$output===$oracle==="
+
+# Previous output method
+#printf "Test case: $case\n"
+#printf "Method: $method\n"
+#printf "Inputs: $args\n"
+#printf "Output: $output\n"
+#printf "Oracle: $oracle\n"
 
 # Print whether it passes or fails
-if ["$result" != ""]; then
-    printf "Result? \e[1m\e[32mPass\e[39m\e[0m\n"
+if [ "$result" != "" ]; then
+    printf "fail"
 else
-    printf "Result? \e[1m\e[31mFail\e[39m\e[0m\n"
+    printf "pass"
 fi
 
 echo

@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Test Results</title>
+<style>
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.subtitle {
+    font-size: 1.3em;
+    width: 100%;
+    padding: 10px 50px 40px 50px;
+}
+#date {
+    text-align: right;  
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 0px 0px -20px;
+}
+.results {
+    width: 100%;
+}
+.results, .results th, .results th td {
+    border: 1px solid black;
+}
+.pass {
+    background-color: green;
+}
+.fail {
+    background-color: red;
+}
+</style>
+</head>
+<body>
+  <div class=title>Team CargoPants</div>
+  <table class=subtitle>
+    <tr>
+      <th>Isabel Lally</th>
+      <th>Collin Bauer</th>
+      <th>Dylan Evans</th>
+    </tr>
+  </table>
+  <div id="date">{time}</div>
+  <table class=results>
+    <tr>
+      <th>Case</th>
+      <th>Requirement</th>
+      <th>Method</th>
+      <th>Inputs</th>
+      <th>Output</th>
+      <th>Oracle</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <th>{case}</th>
+      <th>{requirement}</th>
+      <th>{method}</th>
+      <th>{inputs}</th>
+      <th>{output}</th>
+      <th>{oracle}</th>
+      <th class={pf}>{result}</th>
+    </tr>
+</table>
+</body>
+</html>

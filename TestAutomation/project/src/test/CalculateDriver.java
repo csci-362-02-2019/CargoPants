@@ -27,9 +27,13 @@ public class CalculateDriver{
           toKeep = new Color(r2, b2, g2);
         }
 
-        Double distance = DistanceCalculator.calculate(toChange, toKeep);
+	try{
+          Double distance = DistanceCalculator.calculate(toChange, toKeep);
 
-        System.out.println(distance);
-
+          System.out.println(distance);
+	}
+	catch(Exception e){
+	 System.out.println(e.getMessage());
+	}
     }
 }
