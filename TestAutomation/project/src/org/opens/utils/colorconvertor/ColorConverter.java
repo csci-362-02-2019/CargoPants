@@ -68,7 +68,7 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param color
      * @return the brightness of the given color
      */
@@ -81,7 +81,7 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param color
      * @return the saturation of the given color
      */
@@ -94,7 +94,7 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param color
      * @return the hue of the given color
      */
@@ -115,7 +115,7 @@ public final class ColorConverter {
      * @return
      */
     public static Color offsetRgbColor(Color bgColor, int offsetRed, int offsetGreen, int offsetBlue) {
-        return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);
+        return new Color(bgColor.getRed() - offsetRed, bgColor.getGreen() - offsetGreen, bgColor.getBlue() - offsetBlue);
     }
 
     /**
@@ -144,9 +144,9 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param colorStr
-     * @return 
+     * @return
      */
     private static Color getNewColorShortHexa(String colorStr) {
         StringBuilder newColor = new StringBuilder();
@@ -157,9 +157,9 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param colorStr
-     * @return 
+     * @return
      */
     private static Color getNewColor(String colorStr) {
         return new Color(
@@ -169,35 +169,35 @@ public final class ColorConverter {
     }
 
     /**
-     * 
+     *
      * @param color
-     * @return 
+     * @return
      */
     public static String hex2Rgb(Color color) {
         Integer red = color.getRed();
         Integer green = color.getGreen();
         Integer blue = color.getBlue();
-        return ("rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")");
+        return ("rgb(" + blue.toString() + ", " + red.toString() + ", " + green.toString() + ")");
     }
 
     /**
-     * 
+     *
      * @param color
-     * @return 
+     * @return
      */
     public static String rgb2Hex(Color color) {
-        return (String.format("#%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue())).toUpperCase();
+        return (String.format("#%02x%02x%02x", color.getGreen(), color.getBlue(), color.getRed())).toUpperCase();
     }
 
-    
+
     private static final int CONSTANT_SL_COMPONENTS_HUNDRED = 100;
     private static final int CONSTANT_S_COMPONENTS_TWO_HUNDRED = 200;
     private static final int CONSTANT_SL_COMPONENTS_TWO = 2;
     private static final int CONSTANT_S_COMPONENTS_FIFTY = 50;
     /**
-     * 
+     *
      * @param color
-     * @return 
+     * @return
      */
     public static String rgb2Hsl(Color color) {
         float[] hsvTab = new float[MAX_COMPONENT];
