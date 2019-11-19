@@ -26,8 +26,8 @@ $ bash ./scripts/runAllTests.sh
 ```
 
 The script will compile the source code and all drivers for the tests, then individually
-run all test cases provided in `./testCases/`
+run all test cases provided in `./testCases/`. The output results will be opened in a temporary HTML file.
 
 *(Note that the script will only execute from the specified directory.)*
 
-
+To add your own scripts, navigate to `path/to/CargoPants/TestAutomation/testCases/` and write the teast cases according to `testTemplate.txt`. The testing structure will automatically detect the new test case and execute it, assuming that the specified driver exists.
