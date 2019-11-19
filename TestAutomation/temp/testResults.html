@@ -43,7 +43,7 @@
       <th>Dylan Evans</th>
     </tr>
   </table>
-  <div id="date">Mon Nov 18 20:44:33 EST 2019</div>
+  <div id="date">Mon Nov 18 21:29:11 EST 2019</div>
   <table class=results>
     <tr>
       <th>Case</th>
@@ -59,9 +59,9 @@
       <th>The method will take a valid color defined by rgb and change it to hex.</th>
       <th>ColorConverter .rgb2Hex()</th>
       <th>220 136 15</th>
+      <th>#880FDC</th>
       <th>#DC880F</th>
-      <th>#DC880F</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>02</th>
@@ -86,27 +86,27 @@
       <th>The method will take a valid color defined by rgb and change it to hex.</th>
       <th>ColorConverter .rgb2Hex()</th>
       <th>30 15 2</th>
+      <th>#0F021E</th>
       <th>#1E0F02</th>
-      <th>#1E0F02</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>05</th>
       <th>The method will take a valid color defined by rgb and change it to hex.</th>
       <th>ColorConverter .rgb2Hex()</th>
       <th>184 93 25</th>
+      <th>#5D19B8</th>
       <th>#B85D19</th>
-      <th>#B85D19</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>06</th>
       <th>The method will take a valid color defined by a hex value and convert to rgb.</th>
       <th>ColorConverter .hex2Rgb()</th>
       <th>0xDC880F</th>
+      <th>rgb(15, 220, 136)</th>
       <th>rgb(220, 136, 15)</th>
-      <th>rgb(220, 136, 15)</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>07</th>
@@ -131,108 +131,108 @@
       <th>The method will take a valid color defined by a hex value and convert to rgb.</th>
       <th>ColorConverter .hex2Rgb()</th>
       <th>18 52 86</th>
+      <th>rgb(86, 18, 52)</th>
       <th>rgb(18, 52, 86)</th>
-      <th>rgb(18, 52, 86)</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>10</th>
       <th>The method will take a valid color defined by a hex value and convert to rgb.</th>
       <th>ColorConverter .hex2Rgb()</th>
       <th>0xAABBCC</th>
+      <th>rgb(204, 170, 187)</th>
       <th>rgb(170, 187, 204)</th>
-      <th>rgb(170, 187, 204)</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>11</th>
       <th>This method takes two doubles and computes the contrast between them and outputs in the form of a double.</th>
       <th>ContrastChecker .computeContrast()</th>
       <th>50.0 20.0</th>
+      <th>1035.25</th>
       <th>2.5</th>
-      <th>2.5</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>12</th>
       <th>This method takes two doubles and computes the contrast between them and outputs in the form of a double.</th>
       <th>ContrastChecker .computeContrast()</th>
       <th>-50.0 0.0</th>
+      <th>-24.75</th>
       <th>-999.0</th>
-      <th>-999.0</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>13</th>
       <th>This method takes two doubles and computes the contrast between them and outputs in the form of a double.</th>
       <th>ContrastChecker .computeContrast()</th>
       <th>100 250</th>
+      <th>25175.25</th>
       <th>0.4</th>
-      <th>0.4</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>14</th>
       <th>This method takes two doubles and computes the contrast between them and outputs in the form of a double.</th>
       <th>ContrastChecker .computeContrast()</th>
       <th>100.0 100.0</th>
+      <th>10100.25</th>
       <th>1.0</th>
-      <th>1.0</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>15</th>
       <th>This method takes two doubles and computes the contrast between them and outputs in the form of a double.</th>
       <th>ContrastChecker .computeContrast()</th>
       <th>1000000.9 75.5</th>
+      <th>7.60001064E7</th>
       <th>13236.28</th>
-      <th>13236.28</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>16</th>
       <th>This method takes six integers, the first three represent the rgb values of a color</th>
       <th>ColorConverter .offsetRgbColor()</th>
       <th>250 0 0 5 10 15</th>
+      <th>Color parameter outside of expected range: Green Blue</th>
       <th>java.awt.Color[r=255,g=10,b=15]</th>
-      <th>java.awt.Color[r=255,g=10,b=15]</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>17</th>
       <th>This method takes six integers, the first three represent the rgb values of a color</th>
       <th>ColorConverter .offsetRgbColor()</th>
       <th>100 150 255 -50 -100 -200</th>
+      <th>Color parameter outside of expected range: Blue</th>
       <th>java.awt.Color[r=50,g=50,b=55]</th>
-      <th>java.awt.Color[r=50,g=50,b=55]</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>18</th>
       <th>This method takes six integers, the first three represent the rgb values of a color</th>
       <th>ColorConverter .offsetRgbColor()</th>
       <th>2 5 16 45 101 99</th>
+      <th>Color parameter outside of expected range: Red Green Blue</th>
       <th>java.awt.Color[r=47,g=106,b=115]</th>
-      <th>java.awt.Color[r=47,g=106,b=115]</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>19</th>
       <th>This method takes six integers, the first three represent the rgb values of a color</th>
       <th>ColorConverter .offsetRgbColor()</th>
       <th>101 101 202 25 50 -101</th>
+      <th>Color parameter outside of expected range: Blue</th>
       <th>java.awt.Color[r=126,g=151,b=101]</th>
-      <th>java.awt.Color[r=126,g=151,b=101]</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>20</th>
       <th>This method takes six integers, the first three represent the rgb values of a color</th>
       <th>ColorConverter .offsetRgbColor()</th>
       <th>50 50 50 50 50 50</th>
+      <th>java.awt.Color[r=0,g=0,b=0]</th>
       <th>java.awt.Color[r=100,g=100,b=100]</th>
-      <th>java.awt.Color[r=100,g=100,b=100]</th>
-      <th class=pass>pass</th>
+      <th class=fail>fail</th>
     </tr>
     <tr>
       <th>21</th>
