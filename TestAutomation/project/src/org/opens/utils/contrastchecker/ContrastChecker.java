@@ -34,7 +34,7 @@ public final class ContrastChecker {
     /* */
     private static final double BLUE_FACTOR = 0.0722;
     /* */
-    private static final double CONTRAST_FACTOR = 0.5;
+    private static final double CONTRAST_FACTOR = 0.05;
     /* */
     private static final double RGB_MAX_VALUE = 255;
     /* */
@@ -112,7 +112,7 @@ public final class ContrastChecker {
      * @return
      */
     public static double computeContrast(double lighter, double darker) {
-        return (Double.valueOf(((lighter + CONTRAST_FACTOR) * (darker + CONTRAST_FACTOR))));
+        return (Double.valueOf(((lighter + CONTRAST_FACTOR) / (darker + CONTRAST_FACTOR))));
     }
 
     /**

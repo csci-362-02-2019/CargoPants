@@ -115,7 +115,7 @@ public final class ColorConverter {
      * @return
      */
     public static Color offsetRgbColor(Color bgColor, int offsetRed, int offsetGreen, int offsetBlue) {
-        return new Color(bgColor.getRed() - offsetRed, bgColor.getGreen() - offsetGreen, bgColor.getBlue() - offsetBlue);
+        return new Color(bgColor.getRed() + offsetRed, bgColor.getGreen() + offsetGreen, bgColor.getBlue() + offsetBlue);
     }
 
     /**
@@ -177,7 +177,7 @@ public final class ColorConverter {
         Integer red = color.getRed();
         Integer green = color.getGreen();
         Integer blue = color.getBlue();
-        return ("rgb(" + blue.toString() + ", " + red.toString() + ", " + green.toString() + ")");
+        return ("rgb(" + red.toString() + ", " + green.toString() + ", " + blue.toString() + ")");
     }
 
     /**
@@ -186,7 +186,7 @@ public final class ColorConverter {
      * @return
      */
     public static String rgb2Hex(Color color) {
-        return (String.format("#%02x%02x%02x", color.getGreen(), color.getBlue(), color.getRed())).toUpperCase();
+        return (String.format("#%02x%02x%02x", color.getRed(), color.getGreen(), color.getBlue())).toUpperCase();
     }
 
 
